@@ -1,0 +1,159 @@
+.footer-section {
+  width: 100%;
+  height: auto;
+  background: var(--secandary);
+  margin: 0;
+  padding: 10px;
+}
+/* Footer Flex Start */
+
+.footer-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+/* Footer Flex Headign Start */
+
+.footer-box1 {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.footer-box1-heading {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.footer-box1 > ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+  margin: 10px 0px;
+  
+}
+
+.footer-box1 > ul > li {
+  padding-top: 10px;
+}
+
+.footer-box1 > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-box1 > ul > li > a:hover {
+  color: var(--sea-color);
+  transition: 0.4s ease-in;
+}
+/* Footer Flex Headign Start */
+
+/* Footer Flex Detail Start */
+
+.footer-box2 {
+  flex-basis: 25%;
+}
+
+.footer-detail-heading {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-detail-box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  color: white;
+}
+
+.footer-detail-text > h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+/* Footer Flex Detail End */
+
+/* Footer Flex Map Start */
+.footer-box3-map {
+  flex-basis: 40%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.footer-box3-map > iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Footer Flex Map End */
+
+/* Footer Flex End */
+
+/* Footer Icons Start */
+.footer-icons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0px;
+}
+.footer-icon-box {
+  font-size: 24px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.footer-icon-box {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.footer-icon-box:hover {
+  transform: scale(1.1);
+  background: var(--accent-color);
+}
+/* Footer Icons End */
+/* Copyright Line Start*/
+.copyright {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: var(--sea-color);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.copyright > p {
+  color: white;
+  font-size: 18px;
+  padding: 7px 0;
+  margin: 0;
+}
+/* Copyright Line End */
+
+@media (max-width: 600px) {
+  .footer-flex {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+}

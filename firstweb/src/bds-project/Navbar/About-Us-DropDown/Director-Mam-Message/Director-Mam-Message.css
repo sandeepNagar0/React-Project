@@ -1,0 +1,86 @@
+.Director-Mam-Message-h1{
+    background: rgb(231, 231, 231);
+    color: var(--secandary);
+    font-size: 24px;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.Director-Mam-Message-icon{
+    width: 100%;
+    height: auto;
+    background: var(--primary);
+    gap: 10px;
+}
+
+.Director-Mam-Message-icon>h3{
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 50px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.Director-Mam-Message-icon>h3>i{
+    margin-right: 10px;
+}
+.Director-Mam-Message-h1>span{
+    position: relative;
+}
+
+.Director-Mam-Message-h1>span::after{
+    content: '';
+    width: 80%;
+    height: 1px;
+    border-radius: 30px;
+    border: none;
+    background: var(--secandary);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Director-Mam-Message-content{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:30% auto;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.left-side-Director-Mam-Message{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left-side-Director-Mam-Message img{
+    width: 300px;
+
+}
+
+.right-side-Director-Mam-hadding>h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secandary);
+    line-height: 10px;
+    margin-top: 25px;
+}
+
+.right-side-Director-Mam-Message p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    margin: 10px 0px;
+}
+
+

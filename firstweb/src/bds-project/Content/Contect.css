@@ -1,0 +1,86 @@
+.humberger-icon{
+  display: none;
+}
+.contect-section{
+    max-width: 100%;
+    background: var(--text);
+    margin: 10px 0;
+}
+
+
+.contect-section .contect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contect .logo img{
+    width: 80%;
+}
+
+.contect .info-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.info-container>.info>p{
+    margin: 0;
+    padding: 0;
+}
+.contect p{
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+.contect-section .container>h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -20px;
+    animation: blinkh3 1s infinite;
+    color: var(--secandary);
+}
+
+@keyframes blinkh3{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-width:600px) {
+    /* Contect */
+
+    .contect-section .container>h3{
+        display: none;
+    }
+    .contect .info-container{
+        display: none;
+    }
+
+    .contect .logo img{
+        display: block;
+    }
+
+    .contect-section{
+        position: relative;
+        margin-top: 0;
+    }
+    /* Hamberger menu */
+    .humberger-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+
+    .humberger-icon>i{
+        font-size: 30px;
+    }
+    /* Hamberger menu */
+    
+    /* Contect */
+    
+}

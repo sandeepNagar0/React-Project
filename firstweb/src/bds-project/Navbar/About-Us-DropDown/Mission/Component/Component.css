@@ -1,0 +1,126 @@
+.Component-h1{
+    background: rgb(231, 231, 231);
+    color: var(--secandary);
+    font-size: 24px;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.Component-icon{
+    width: 100%;
+    height: auto;
+    background: var(--primary);
+    gap: 10px;
+}
+
+.Component-icon>.container>h3{
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+
+.Component-icon>.container>h3>i{
+    margin-right: 10px;
+}
+
+.container{
+    padding: 0;
+    margin: 0 auto;
+}
+.Component-h1>span{
+    position: relative;
+}
+
+.Component-h1>span::after{
+    content: '';
+    width: 80%;
+    height: 1px;
+    border-radius: 30px;
+    border: none;
+    background: var(--secandary);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Component-content{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.left-side-Component>p{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin: 20px 0px;
+    color: black;
+}
+
+.left-side-Component>h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.left-side-Component>p>b{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.right-side-Component{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.right-side-Component>img{
+    width: 100%;
+
+}
+
+.Component-content>h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bottom-text>h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.bottom-text>p{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin: 20px 0px;
+    color: black;
+}
+
+.bottom-text>p>b{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.bottom-text>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom:50px ;
+
+}

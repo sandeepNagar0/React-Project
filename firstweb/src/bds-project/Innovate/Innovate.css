@@ -1,0 +1,99 @@
+.innovate {
+  width: 100%;
+  height: auto;
+}
+
+.innovate-hadding {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secandary);
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.innovate-span {
+  position: relative;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.innovate-span::after {
+  content: "";
+  width: 4px;
+  height: 30px;
+  background: var(--secandary);
+  position: absolute;
+  top: 0%;
+  right: -15px;
+}
+
+/* Innovate Flex Heading End */
+
+/* Innovate Flex items start*/
+.innovate-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+/* Left Side Start */
+.innovate-left-side {
+  flex-basis: 47%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.innovate-left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Left Side End */
+/* Right Side Start and grid start*/
+.innovate-right-side {
+  flex-basis: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  border: 1px solid var(--secandary);
+}
+
+.innovate-grid {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+  border: 1px solid var(--secandary);
+}
+
+.innovate-grid>h5{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.robotic img{
+    width: 70px;
+}
+
+@media (max-width: 600px) {
+  .innovate-flex {
+    flex-direction: column;
+  }
+
+  .innovate-right-side {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+
+  .innovate-flex {
+    padding-bottom: 20px;
+  }
+}

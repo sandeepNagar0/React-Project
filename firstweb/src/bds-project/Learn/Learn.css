@@ -1,0 +1,131 @@
+.detail {
+  width: 100%;
+  height: auto;
+  background: var(--text);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0a2a66;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.learn {
+  position: relative;
+  margin-right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.learn::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  top: 0px;
+  right: -10px;
+  background: var(--secandary);
+}
+
+.p1-details {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.detail-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.detail-items ul li {
+  padding: 8px 30px;
+  border-radius: 5px;
+  background: var(--secandary);
+}
+
+.detail-items ul li:nth-child(even) {
+  background: var(--primary);
+}
+
+.detail-items ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Classroom Flex Div Start */
+
+.classroom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.teacher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img-circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--secandary);
+  border-radius: 50%;
+  position: relative;
+}
+
+.teacher img {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.teacher-img-text {
+  font-size: 20px;
+  color: var(--secandary);
+}
+
+@media (max-width: 600px) {
+  .p1-details {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+  }
+
+  .detail-items ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .detail-items ul li {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .classroom {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

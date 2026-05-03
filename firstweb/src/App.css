@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+:root{
+    --primary:#61dbd5;
+    --secandary:#003a70;
+    --text:#fff;
+    --accent-color:#26daf1;
+    --sea-color:#08447c;
+}
+
+/* Scrollbtn Bottom Click Button */
+#scrollbtn{
+    font-size: 24px;
+    background: var(--secandary);
+    color: var(--text);
+    position: fixed;
+    padding: 5px 10px;
+    right: 0;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+/* Scrollbtn Bottom Click Button */
+
+/* Mobile Responsive Start */
+@media (max-width:600px) {
+
+    #scrollbtn{
+        display: none;
+    }
+    
+}
+

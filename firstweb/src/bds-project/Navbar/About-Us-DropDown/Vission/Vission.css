@@ -1,0 +1,76 @@
+.Vission-h1{
+    background: rgb(231, 231, 231);
+    color: var(--secandary);
+    font-size: 24px;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.Vission-icon{
+    width: 100%;
+    height: auto;
+    background: var(--primary);
+    gap: 10px;
+}
+
+.Vission-icon>h3{
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 50px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.Vission-icon>h3>i{
+    margin-right: 10px;
+}
+.Vission-h1>span{
+    position: relative;
+}
+
+.Vission-h1>span::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    border-radius: 30px;
+    border: none;
+    background: var(--secandary);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Vission-content{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.left-side-Vission p{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin: 10px 0px;
+}
+
+.left-side-Vission>p>b{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.right-side-Vission{
+    margin-top: 20px;
+}
+

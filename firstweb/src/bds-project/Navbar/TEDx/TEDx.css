@@ -1,0 +1,134 @@
+
+.sports-heading{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgb(233, 232, 232);
+    padding: 30px 0px;
+    margin: 0;
+    color: var(--secandary);
+}
+
+.sports-heading>span{
+    color: red;
+}
+
+.sports-icon{
+    background: var(--primary);
+    margin: 0;
+    padding: 10px 0px;
+}
+.sports-icon>.container>h3{
+    font-size: 20px;
+    color: var(--secandary);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sports-icon>.container>h3>i{
+    margin-right: 10px;
+}
+
+.sports-content{
+    width: 100%;
+    background: #d7effa;
+    padding: 20px;
+}
+
+.sports-content-heading{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0;
+    color: var(--secandary);
+}
+
+.sports-content-heading>img{
+    width: 150px;
+}
+
+.sports-content-p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: var(--secandary);
+}
+
+.sports-box-1{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: none;
+    background: var(--secandary);
+    color: white;
+    padding: 0px;
+    margin-top: 20px;
+
+}
+
+.sports-box-1>h4{
+    text-transform: uppercase;
+}
+
+.sports-box-1>p{
+    margin-top: 20px;
+}
+.sports-content-box{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+    padding: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.left-side-sports-content-box{
+    width: 25%;
+    height: 300px;
+    background: var(--primary);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.left-side-sports-content-box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sports-content-box-heading{
+    font-size: 20px;
+    display: inline;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(71, 178, 240);
+    width: 100%;
+    background: #19528b;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+
+}
+.sports-content-box-heading-line{
+    margin-top: 15px;
+
+}
+
+.right-side-sports-content-box{
+    width: 75%;
+}
+
+.right-side-sports-content-box>p{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+
+}
