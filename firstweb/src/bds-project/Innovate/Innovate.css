@@ -72,6 +72,33 @@
   padding-top: 10px;
   margin: 0;
   border: 1px solid var(--secandary);
+  position: relative;
+  overflow: hidden;
+}
+
+.innovate-grid>*{
+  position: relative;
+  z-index: 2;
+}
+
+.innovate-grid::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  opacity: .3;
+  z-index: 0;
+}
+
+.innovate-grid:hover::before{
+  transform: scaleX(1);
+  
 }
 
 .innovate-grid>h5{

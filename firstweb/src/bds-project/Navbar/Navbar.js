@@ -1,12 +1,28 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
+import { gsap } from 'gsap';
+import { useEffect } from 'react';
+
 function Navbar(){
+
+  useEffect(() => {
+  gsap.fromTo("navbar > ul > li.animate > a",{
+    x:100,
+    opacity:0
+  }, {
+    x: 0,
+    opacity: 1,
+    duration: 0.6,
+    stagger: 0.15,
+    ease: "power3.out"
+  });
+}, []);
     return(
         <nav className="navbar">
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li>
+        <li className='animate'><Link to="/">Home</Link></li>
+        <li className='animate'>
           <Link to="/">About Us</Link>
           <div className="drop">
             <ul>
@@ -23,7 +39,7 @@ function Navbar(){
             </ul>
           </div>
         </li>
-        <li>
+        <li className='animate'>
           <Link to="/">Infrastructure</Link>
           <div className="drop">
             <ul>
@@ -35,7 +51,7 @@ function Navbar(){
             </ul>
           </div>
         </li>
-        <li>
+        <li className='animate'>
           <Link to="/">Guidelines</Link>
           <div className="drop">
             <ul>
@@ -45,7 +61,7 @@ function Navbar(){
             </ul>
           </div>
         </li>
-        <li>
+        <li className='animate'>
           <Link to="/">Ted<small>x</small></Link>
           <div className="drop">
             <ul>
@@ -53,10 +69,10 @@ function Navbar(){
             </ul>
           </div>
         </li>
-        <li><Link to="/">News</Link></li><li>
-        <Link to="/">Vacany</Link></li>
-        <li><Link to="/">gallery</Link></li>
-        <li><Link to="/">contact us</Link></li>
+        <li className='animate'><Link to="/News">News</Link></li>
+        <li className='animate'><Link to="/Vacancy">Vacancy</Link></li>
+        <li className='animate'><Link to="/">gallery</Link></li>
+        <li className='animate'><Link to="/">contact us</Link></li>
       </ul>
     </nav>
     )

@@ -44,15 +44,17 @@ import Rules from "./bds-project/Navbar/Guideline/Rules/Rules.js";
 import Grading from "./bds-project/Navbar/Guideline/Grading/Gradung.js";
 /* Guidline DropDown Menu End*/
 
-// Navbar DropDown Menu Start
+/* Vacany DropDown Start */
+import Vacancy from "./bds-project/Navbar/Vacancy/Vacancy.js";
+/* Vacany DropDown End */
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import TEDx from "./bds-project/Navbar/TEDx/TEDx.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/React-Project">
     {/* 👇 ye har page pe common rahega */}
       <Header />
       {/* 👇 ye har page pe common rahega */}
@@ -113,7 +115,15 @@ function App() {
         <Route path="/TEDx" element={<TEDx/>}/>
         {/* ✅ TEDx Page End */}
 
+        {/* ✅ News-Navbar Page Start */}
+        <Route path="/News" element={<News/>}/>
+        {/* ✅ News-Navbar Page End */}
 
+        {/* ✅ Vacancy Page Start */}
+        <Route path="/Vacancy" element={<Vacancy/>}/>
+        {/* ✅ Vacancy Page End */}
+
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
       {/* 👇 ye bhi har page pe rahega */}

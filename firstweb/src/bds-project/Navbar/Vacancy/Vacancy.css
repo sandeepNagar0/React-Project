@@ -1,0 +1,181 @@
+.vacancy-heading {
+  background: rgb(231, 231, 231);
+  color: var(--secandary);
+  font-size: 24px;
+  padding: 30px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.vacancy-heading > span {
+  position: relative;
+}
+
+.vacancy-heading > span::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  border-radius: 30px;
+  border: none;
+  background: var(--secandary);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.vacancy-icon {
+  width: 100%;
+  height: auto;
+  background: var(--primary);
+  gap: 10px;
+}
+
+.vacancy-icon > .container > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secandary);
+  padding: 10px 0px;
+  margin: 0;
+}
+.vacancy-icon > .container > h3 > i {
+  margin-right: 10px;
+}
+
+/* Form Start */
+
+.vacancy-form {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.form-heading {
+  font-size: 34px;
+  font-weight: 500;
+  color: var(--secandary);
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Flex Start */
+.vacancy-flex {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+/* Left Side Start */
+.left-side {
+  width: 60%;
+  height: auto;
+  box-shadow: 0px 0px 10px #ccc;
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.left-content {
+  border: 1px solid lightblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.receptionist-flex {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.receptionist-flex > h6 {
+  font-size: 14px;
+  padding: 6px 10px;
+  background: lightblue;
+  border-radius: 20px;
+  color: var(--secandary);
+}
+
+.applybtn {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4f46e5, #a855f7);
+  color: white;
+  padding: 6px 10px;
+}
+/* Left Side End */
+
+/* Right Side Start */
+.right-side {
+  width: 38%;
+  height: auto;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+.right-side-form-box {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.right-side-form-box > label {
+  margin: 0px 5px 5px;
+  color: var(--secandary);
+  font-weight: bold;
+}
+
+.right-side-form-box > select {
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px 10px;
+  border: 1px solid lightblue;
+}
+select:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px lightblue;
+}
+
+.right-side-form-box > input {
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px 10px;
+  border: 1px solid lightblue;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px lightblue;
+}
+
+.right-side-form-box > textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid lightblue;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px lightblue;
+  transform: scale(1.02);
+}
+.submitbtn {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4f46e5, #a855f7);
+  color: white;
+  padding: 6px 10px;
+}
+/* Right Side End */
+/* Flex End */
+/* End Start */
